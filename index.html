@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Los Gatos</title>
-    <link rel="stylesheet" href="styles.css" />
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
-
-  <body>
-    <h1 id="titulo">Los Gatos Siameses</h1>
-    <center>
-       <img
-         id="gato"
-         src="https://upload.wikimedia.org/wikipedia/commons/6/60/Neighbours_Siamese.jpg"
-         alt="Gato Siámés"
-         width="250"
-        />
-    </center>
-
-    <audio id="audio" controls loop>
-  <source src="Meow.mp3" type="audio/mpeg">
-</audio>
-
-<button onclick="document.getElementById('audio').play()">Reproducir música</button>
-
-    <h2>Características</h2>
-    <ul>
-      <li>Son gatos de tamaño mediano.</li>
-      <li>Su pelaje es corto y suave.</li>
-      <li>Tienen ojos azules y orejas grandes.</li>
-      <li>Son muy sociables y cariñosos.</li>
-    </ul>
-
-    <h2>Curiosidades</h2>
-    <ul>
-      <li>El gato siamés es originario de Tailandia.</li>
-      <li>Son conocidos por su personalidad extrovertida y vocal.</li>
-      <li>Se cree que traen buena suerte a sus dueños.</li>
-    </ul>
-
-    <h1>Fin c:</h1>
-  </body>
-</html>
-
-  
-  
+     <body>
+        <h1 id="titulo">
+          Los Gatos Siameses
+        </h1>
+        <img
+          id="gato"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/60/Neighbours_Siamese.jpg"
+          alt="Gato Siámés"
+          width="250"
+          />
+        <audio>
+          id="audio" 
+          controls loop
+          <source 
+            src="Meow.mp3" 
+            type="audio/mpeg"
+          >
+        </audio>
+        <button 
+        onclick="document.getElementById('audio').play()"
+        >Reproducir música
+        </button>
+        <section>
+         <br><br>
+          <h2 id="Titulo-Curiosidades">
+            Curiosidades
+          </h2>
+          <ul id="lista-curiosidades">
+            <li>
+              <button class="boton-curiosidad">Curiosidad 1</button>
+                <fieldset hidden class="caja-curiosidad">
+                  <p>El gato siamés es originario de Tailandia.</p>
+                </fieldset>
+            </li>
+            <br>
+            <li>
+              <button class="boton-curiosidad">Curiosidad 2</button>
+              <fieldset hidden class="caja-curiosidad">
+                <p>Es conocido por ser muy extrovertido.</p>
+              </fieldset>
+            </li>
+            <br>
+            <li>
+              <button class="boton-curiosidad">Curiosidad 3</button>
+              <fieldset hidden class="caja-curiosidad">
+                <p>Se cree que trae buena suerte a sus dueños.</p>
+              </fieldset>
+            </li>
+          </ul>
+        </section>
+        <footer>
+          <p>© 2026Los Gatos Siameses</p>
+        </footer>
+    </body>
+  </html>
