@@ -1,9 +1,37 @@
 #titulo {
   color: black;
   font-size: 50px;
-  text-align: center; /* Centra el texto horizontalmente */
+  text-align: center;
 }
 #gato {
+ display: block;
+  margin: 0 auto;
   border: 4px solid black;
   border-radius: 10px;
+}
+.caja-curiosidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  margin: 10px auto 0;
+  transform: translateX(15px);
+}
+.caja-curiosidad[hidden] {
+  display: none;
+}
+.caja-curiosidad p {
+  margin: 0;
+}
+#Titulo-Curiosidades {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+#lista-curiosidades {
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
 }
